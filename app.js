@@ -14,7 +14,7 @@ mongoose.connect(
   }
 );
 
-
+mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
